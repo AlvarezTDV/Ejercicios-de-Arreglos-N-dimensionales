@@ -3,7 +3,7 @@
 #include <stdlib.h>
 using namespace std;
 
-//FUNCION PARA DEFINIR LAS MINAS DE FORMA ALEATORIA
+//FUNCION PARA DEFINIR LAS CELDAS VIVAS O MUERTAS
 void vidaConway( int matrizPrimeraGeneracion[][11], int matrizSegundaGeneracion[][11], int fila, int columna ) {
 	for ( int i = 0; i < fila; i++ ) {
 		for ( int j = 0; j < columna; j++ ) {
@@ -33,7 +33,7 @@ void mostrarMatriz( int matrizPrimeraGeneracion[][11], int matrizSegundaGeneraci
 	}
 }
 
-//FUNCION PARA DETECTAR MINAS
+//FUNCION PARA LA SEGUNDA GENERACION
 void segundaGeneracion( int matrizPrimeraGeneracion[][11], int matrizSegundaGeneracion[][11], int fila, int columna ) {
 	for ( int i = 1; i < fila; i++ ) {
 		for ( int j = 1; j < columna; j++ ) {
